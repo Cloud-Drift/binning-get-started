@@ -1,0 +1,20 @@
+[project]
+name = "clouddrift-binning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cartopy>=0.25.0",
+    "clouddrift",
+    "cmocean>=4.0.3",
+    "ipykernel>=6.30.0",
+]
+
+[tool.uv.sources]
+clouddrift = { git = "https://github.com/philippemiron/clouddrift.git", branch = "binning-plus" }
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.7",
+]

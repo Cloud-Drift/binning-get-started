@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-clouddrift = { git = "https://github.com/philippemiron/clouddrift.git", branch = "binning-plus" }
+clouddrift = { git = "https://github.com/philippemiron/clouddrift.git", branch = "fix-bins-list" }
 
 [dependency-groups]
 dev = [

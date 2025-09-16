@@ -6,13 +6,10 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "cartopy>=0.25.0",
-    "clouddrift",
+    "clouddrift>=0.46.0",
     "cmocean>=4.0.3",
     "ipykernel>=6.30.0",
 ]
-
-[tool.uv.sources]
-clouddrift = { git = "https://github.com/philippemiron/clouddrift.git", branch = "fix-bins-list" }
 
 [dependency-groups]
 dev = [

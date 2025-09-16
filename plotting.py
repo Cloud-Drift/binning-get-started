@@ -1,8 +1,10 @@
 """Various plotting utilities."""
+
 import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 import numpy as np
 from mpl_toolkits.axes_grid1 import make_axes_locatable
+
 
 # there is currently a small issue with the Spilhaus() projection
 # See, https://github.com/SciTools/cartopy/issues/2542
@@ -66,5 +68,5 @@ def add_colorbar(fig, ax, var, fmt=None, range_limit=None):
     cb = fig.colorbar(var, cax=cax, format=fmt)
     if range_limit:
         cb.mappable.set_clim(range_limit)
-    cb.ax.tick_params(which='major', labelsize=6, length=3, width=0.5, pad=0.05)
+    cb.ax.tick_params(which="major", labelsize=6, length=3, width=0.5, pad=0.05)
     return cb

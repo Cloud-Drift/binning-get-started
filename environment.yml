@@ -1,0 +1,11 @@
+    name: clouddrift-binning
+    channels:
+      - conda-forge
+      - defaults
+    dependencies:
+      - python=3.12
+      - clouddrift>=0.46
+      - cartopy>=0.25.0
+      - cmocean>=4.0.3
+      - ipykernel>=6.30.1
+      - PROJ>=9.7.0
